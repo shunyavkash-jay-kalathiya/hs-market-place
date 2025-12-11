@@ -157,7 +157,6 @@ section {
 
 .flexible-pricing-card-list-item {
   display: flex;
-  align-items: center;
   gap: 8px;
   font-weight: 500;
   font-size: 16px;
@@ -170,6 +169,7 @@ color: #476aff;
 .flexible-pricing-card-list-icon {
   display: block;
   height: 16px;
+  margin-top: 2px;
   color: #62697d;
 }
 
