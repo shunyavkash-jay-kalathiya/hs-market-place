@@ -72,8 +72,12 @@ section {
   gap: 16px;
   grid-template-columns: repeat(3, 1fr);
 }
-.flexible-pricing-card.popular{
-    background-image:linear-gradient(180deg,rgba(241, 232, 255, 1) 0%, rgba(254, 255, 255, 1) 100%);
+.flexible-pricing-card.popular {
+  background-image: linear-gradient(
+    180deg,
+    rgba(241, 232, 255, 1) 0%,
+    rgba(254, 255, 255, 1) 100%
+  );
 }
 .flexible-pricing-card {
   padding: 20px;
@@ -85,30 +89,30 @@ section {
 .flexible-pricing-card-content {
   border-radius: 40px;
   background-color: #f7f9fc;
-      height: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .flexible-pricing-card-top-content {
-    position: relative;
+  position: relative;
   padding: 40px;
   border: 1px solid #f7f9fc;
   background-color: #ffffff;
   border-radius: 40px;
   box-shadow: 0 1.35px 1.35px 0 #508dff0f, 0 5.38px 5.38px 0 #508dff0f;
 }
-.flexible-pricing-card-popular{
-    position: absolute;
-    top: 20px;
-    right: 22px;
-    color: #476aff;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1;
-    padding: 8px 12px;
-    border-radius: 12px;
-    background-color: #F4F7FF;
+.flexible-pricing-card-popular {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  color: #476aff;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background-color: #f4f7ff;
 }
 .flexible-pricing-card-lable {
   font-size: 24px;
@@ -123,9 +127,9 @@ section {
 
 .flexible-pricing-card-bottom-content {
   padding: 32px;
-      height: 100%;
-    display: flex;
-    flex-direction: column;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .flexible-pricing-card-desc p {
@@ -160,10 +164,15 @@ section {
   line-height: 1.25;
   color: #62697d;
 }
+.flexible-pricing-card.popular .flexible-pricing-card-list-icon svg{
+color: #476aff;
+}
 .flexible-pricing-card-list-icon {
   display: block;
   height: 16px;
+  color: #62697d;
 }
+
 .flexible-pricing-card-list-icon svg {
   aspect-ratio: 1;
   height: auto;
@@ -184,7 +193,7 @@ section {
   border-radius: 12px;
   padding: 16px 32px;
   transition: all 0.3s ease-in-out;
-      margin-top: auto;
+  margin-top: auto;
 }
 .flexible-pricing-card-btn:hover {
   background-color: #030b1d;
@@ -238,32 +247,40 @@ section {
   transform: translateY(0%);
 }
 @media only screen and (max-width: 1023.99px) {
-    .flexible-pricing-card-wrrepar {
+  .flexible-pricing-card-wrrepar {
     grid-template-columns: repeat(2, 1fr);
-    }
+  }
 }
 @media only screen and (max-width: 767.99px) {
-    .flexible-pricing-card-wrrepar {
+  .flexible-pricing-card-wrrepar {
     grid-template-columns: repeat(1, 1fr);
-    }
+  }
 }
 @media only screen and (max-width: 575.99px) {
-    .flexible-pricing-card-wrrepar {
+  .flexible-pricing-card-wrrepar {
     grid-template-columns: repeat(1, 1fr);
-    }
-    .flexible-pricing-card-toggle-wrrepar {
+  }
+  .flexible-pricing-card-toggle-wrrepar {
     padding: 8px;
-    }
-    .flexible-pricing-card-toggle {
+  }
+  .flexible-pricing-card-toggle {
     padding: 12px 10px;
-    }
-    .flexible-pricing-card {
+        font-size: 14px;
+  }
+  .flexible-pricing-card-offer {
+    padding: 8px 7px;
+    font-size: 12px;
+  }
+  .flexible-pricing-card {
     padding: 14px;
-    }
-    .flexible-pricing-card-top-content {
+  }
+  .flexible-pricing-card-top-content {
     padding: 26px;
-    }
-    .flexible-pricing-card-bottom-content {
+  }
+  .flexible-pricing-card-pr {
+    font-size: 40px;
+  }
+  .flexible-pricing-card-bottom-content {
     padding: 20px;
-    }
+  }
 }
