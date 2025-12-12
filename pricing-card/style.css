@@ -87,6 +87,7 @@ section {
   .flexible-pricing-card-btn-icon {
   color: #030b1d;
 }
+
 .flexible-pricing-card {
   padding: 20px;
   border-radius: 40px;
@@ -205,10 +206,12 @@ section {
 }
 .flexible-pricing-card-btn:hover {
   background-color: #030b1d;
+  transform: scale(0.9);
   color: #ffffff;
 }
 .flexible-pricing-card-btn:hover .flexible-pricing-card-btn-icon {
   color: #ffffff;
+  transform: rotate(-45deg);
 }
 .flexible-pricing-card-btn-icon {
   display: inline-block;
@@ -254,52 +257,10 @@ section {
   transition: all 0.3s ease-in-out;
   transform: translateY(0%);
 }
-@media only screen and (max-width: 1023.99px) {
-  .flexible-pricing-card-wrrepar {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 767.99px) {
-  .flexible-pricing-card-wrrepar {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media only screen and (max-width: 575.99px) {
-  .flexible-pricing-card-wrrepar {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .flexible-pricing-card-toggle-wrrepar {
-    padding: 8px;
-  }
-  .flexible-pricing-card-toggle {
-    padding: 12px 10px;
-    font-size: 14px;
-  }
-  .flexible-pricing-card-offer {
-    padding: 8px 7px;
-    font-size: 12px;
-  }
-  .flexible-pricing-card {
-    padding: 14px;
-  }
-  .flexible-pricing-card-top-content {
-    padding: 26px;
-  }
-  .flexible-pricing-card-pr {
-    font-size: 40px;
-  }
-  .flexible-pricing-card-bottom-content {
-    padding: 20px;
-  }
-  .flexible-pricing-card-tab {
-    width: 100%;
-  }
-  .flexible-pricing-card-tab-btn {
-    padding: 10px 20px;
-  }
-}
+
 .flexible-pricing-card-tab-btns {
   overflow-x: auto;
+  scrollbar-width: none;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
@@ -353,6 +314,61 @@ section {
   margin-bottom: 8px;
 }
 
+.flexible-pricing-card-tab-content :is(ul, ol) {
+  padding-left: 20px;
+}
+.flexible-pricing-card-tab-content :is(ul, ol):not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.flexible-pricing-card-tab-content li:not(:last-child) {
+  margin-bottom: 4px;
+}
+
 .flexible-pricing-card-tab-content.active {
   display: block;
+}
+@media only screen and (max-width: 1023.99px) {
+  .flexible-pricing-card-wrrepar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767.99px) {
+  .flexible-pricing-card-wrrepar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (max-width: 575.99px) {
+  .flexible-pricing-card-wrrepar {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .flexible-pricing-card-toggle-wrrepar {
+    padding: 8px;
+  }
+  .flexible-pricing-card-toggle {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+  .flexible-pricing-card-offer {
+    padding: 8px 7px;
+    font-size: 12px;
+  }
+  .flexible-pricing-card {
+    padding: 14px;
+  }
+  .flexible-pricing-card-top-content {
+    padding: 26px;
+  }
+  .flexible-pricing-card-pr {
+    font-size: 40px;
+  }
+  .flexible-pricing-card-bottom-content {
+    padding: 20px;
+  }
+  .flexible-pricing-card-tab {
+    width: 100%;
+  }
+  .flexible-pricing-card-tab-btn {
+    padding: 10px 20px;
+  }
 }
